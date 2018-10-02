@@ -1,0 +1,27 @@
+###Package Import
+
+import pandas as pd
+import seaborn as sns
+import sklearn.model_selection as model_selection
+from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import Ridge
+from sklearn import linear model
+from sklearn.model_selection import train_test_split
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import preprocessing
+from sklearn import metrics
+from sklearn.model_selection import cross_val_predict
+from sklearn.model_selection import cross_validate
+
+###Data Loading
+data = pd.read.csv('all_college_data.csv', na_value = '_')
+data.head()
+
+###Data description
+data.shape()
+data.describe()
+
+###Data Cleaning
+data.isnull().sum()
+data[data.PER.isnull()]
